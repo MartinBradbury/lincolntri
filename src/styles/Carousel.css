@@ -1,0 +1,30 @@
+.carousel-slide {
+  height: 400px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center 30%;
+  position: relative;
+}
+
+/* Individual slide control */
+.slide-1 {
+  background-image: url("../assets/test1.jpg");
+  background-position: center 25%;
+}
+
+.slide-2 {
+  background-image: url("../assets/test2.jpg");
+  background-position: center 40%;
+}
+
+.slide-3 {
+  background-image: url("../assets/test3.jpg");
+  background-position: center center;
+}
+
+@media (max-width: 768px) {
+  .carousel-slide {
+    height: 250px;
+    background-position: center 20%;
+  }
+}

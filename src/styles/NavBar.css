@@ -1,0 +1,58 @@
+/* Main navbar background */
+.navbar-custom {
+  background-color: #ff0000;
+  padding: 0.75rem 0;
+}
+
+/* Brand styling */
+.brand {
+  font-weight: 800;
+  letter-spacing: 1px;
+  font-size: 1.3rem;
+  color: #ffffff !important;
+}
+
+/* Nav links */
+.nav-links .nav-link {
+  color: #000000 !important;
+  font-weight: 500;
+  margin-left: 1rem;
+  transition: opacity 0.2s ease, transform 0.2s ease;
+}
+
+/* Hover effect */
+.nav-links .nav-link:hover {
+  opacity: 0.85;
+  transform: translateY(-1px);
+}
+
+/* Dropdown menu */
+.dropdown-menu {
+  border-radius: 0.5rem;
+  border: none;
+}
+
+/* Dropdown items */
+.dropdown-item {
+  font-weight: 500;
+}
+
+/* Mobile toggle button */
+.navbar-toggler {
+  border: none;
+}
+
+/* Logo image */
+.navbar-logo {
+  height: 40px;
+  width: auto;
+  margin-right: 0.5rem;
+}
+
+/* Brand text */
+.brand-text {
+  font-weight: 800;
+  letter-spacing: 1px;
+  font-size: 1.3rem;
+  vertical-align: middle;
+}
