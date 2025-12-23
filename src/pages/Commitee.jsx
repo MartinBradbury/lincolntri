@@ -60,6 +60,9 @@ function Committee() {
             <li>
               <a href="#">Welfare Officer Role Description</a>
             </li>
+            <li>
+              <a href="#">Head Coach Role Description</a>
+            </li>
           </ul>
         </section>
 
@@ -118,6 +121,14 @@ function Committee() {
               <p>
                 Jayne acts as the main point of contact for memberships within
                 the club.
+              </p>
+            </div>
+            <div className="committee-card">
+              <h3>Head Coach</h3>
+              <h4>Steve Palye</h4>
+              <p>
+                Steve acts as the main point of contact for coaching within the
+                club.
               </p>
             </div>
           </div>
