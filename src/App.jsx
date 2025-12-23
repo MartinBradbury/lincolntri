@@ -5,6 +5,7 @@ import Footer from "./components/Footer.jsx";
 import Training from "./pages/Training.jsx";
 import TrainingSession from "./pages/TrainingSession.jsx";
 import Membership from "./pages/Membership.jsx";
+import Committee from "./pages/Commitee.jsx";
 import ScrollToTop from "./components/ScrollToTop";
 import "bootstrap/dist/css/bootstrap.min.css";
 
@@ -19,6 +20,7 @@ function App() {
           <Route path="/training" element={<Training />} />
           <Route path="/training/:sessionSlug" element={<TrainingSession />} />
           <Route path="/membership" element={<Membership />} />
+          <Route path="/committee" element={<Committee />} />
         </Routes>
       </main>
       <Footer />

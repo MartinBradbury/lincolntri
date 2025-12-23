@@ -1,0 +1,104 @@
+.committee-page {
+  padding: 4rem 1rem;
+}
+
+/* Intro */
+.committee-page h1 {
+  color: #ff0000;
+  margin-bottom: 1rem;
+}
+
+.intro-text {
+  max-width: 800px;
+  font-size: 1.05rem;
+  line-height: 1.7;
+  margin-bottom: 4rem;
+}
+
+/* Sections */
+.committee-section {
+  margin-bottom: 4rem;
+}
+
+.committee-section h2 {
+  color: #ff0000;
+  margin-bottom: 1.25rem;
+  font-size: 1.4rem;
+}
+
+/* Document lists */
+.document-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.document-list li {
+  margin-bottom: 0.75rem;
+}
+
+.document-list a {
+  color: #111;
+  text-decoration: none;
+  font-weight: 500;
+  border-bottom: 1px solid transparent;
+  transition: color 0.2s ease, border-color 0.2s ease;
+}
+
+.document-list a:hover {
+  color: #ff0000;
+  border-color: #ff0000;
+}
+
+/* Committee grid */
+.committee-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+}
+
+/* Committee cards */
+.committee-card {
+  background: #ffffff;
+  border: 1px solid #e5e5e5;
+  border-radius: 6px;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.committee-card h3 {
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: #777;
+  margin: 0;
+}
+
+.committee-card h4 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #ff0000;
+  margin: 0.25rem 0 0.5rem;
+}
+
+.committee-card p {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: #444;
+  margin: 0;
+}
+
+/* Responsive */
+@media (max-width: 1100px) {
+  .committee-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .committee-grid {
+    grid-template-columns: 1fr;
+  }
+}
