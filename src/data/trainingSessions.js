@@ -5,7 +5,7 @@ export const trainingSessions = {
     type: "Swim",
     audience: "Adults and Juniors",
     description:
-      "Our Tuesday swim session is a progressive coached session aimed at improving technique, endurance and confidence in the water.",
+      "Our Tuesday swim session is a progressive coached session aimed at improving technique, endurance and confidence in the water. INFORMATION TO BE ADDED REGARDING SESSIONS ET",
     location: {
       name: "Yarborough Leisure Centre",
       address: "Riseholme Rd, Lincoln LN1 3SP, England",
@@ -18,7 +18,7 @@ export const trainingSessions = {
     type: "Swim",
     audience: "Adults and Juniors",
     description:
-      "Our Thursday swim session is a progressive coached session aimed at improving technique, endurance and confidence in the water.",
+      "Our Thursday swim session is a progressive coached session aimed at improving technique, endurance and confidence in the water. INFORMATION TO BE ADDED REGARDING SESSIONS ET",
     location: {
       name: "The Priory LSST School",
       address:
@@ -31,7 +31,8 @@ export const trainingSessions = {
     time: "7:00pm – 8:00pm",
     type: "Track Run",
     audience: "Adults and Juniors",
-    description: "Add info about the track sessions here.",
+    description:
+      "Friendly track session. INFORMATION TO BE ADDED REGARDING SESSIONS ET",
     location: {
       name: "Yarborough Leisure Centre",
       address: "Riseholme Rd, Lincoln LN1 3SP, England",

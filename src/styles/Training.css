@@ -92,3 +92,13 @@
     grid-template-columns: 1fr;
   }
 }
+
+@media (max-width: 480px) {
+  .session-meta {
+    flex-direction: column;
+    width: 50%;
+    gap: 0.25rem;
+    align-items: left;
+    margin-left: 25%;
+  }
+}
