@@ -5,11 +5,13 @@ import Footer from "./components/Footer.jsx";
 import Training from "./pages/Training.jsx";
 import TrainingSession from "./pages/TrainingSession.jsx";
 import Membership from "./pages/Membership.jsx";
+import ScrollToTop from "./components/ScrollToTop";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 function App() {
   return (
     <BrowserRouter>
+      <ScrollToTop />
       <NavBar />
       <main className="app-content">
         <Routes>
