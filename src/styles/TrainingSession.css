@@ -1,0 +1,64 @@
+.training-session {
+  padding: 4rem 1rem;
+}
+
+.training-session h1 {
+  color: #ff0000;
+  margin-bottom: 1rem;
+}
+
+.session-meta {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-bottom: 2rem;
+}
+
+.session-meta span {
+  background: #ff0000;
+  color: #ffffff;
+  padding: 0.3rem 0.9rem;
+  font-size: 0.8rem;
+  font-weight: 600;
+  border-radius: 20px;
+}
+
+/* Image / carousel placeholder */
+.session-media {
+  height: 350px;
+  background: #f2f2f2;
+  border-radius: 8px;
+  margin-bottom: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #777;
+  font-style: italic;
+}
+
+/* Description */
+.session-description {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  max-width: 800px;
+  margin-bottom: 3rem;
+}
+
+/* Map */
+.session-map h2 {
+  color: #ff0000;
+  margin-bottom: 1rem;
+}
+
+.session-map iframe {
+  width: 100%;
+  height: 350px;
+  border: none;
+  border-radius: 8px;
+}
+
+.address {
+  margin-top: 0.75rem;
+  font-size: 0.95rem;
+  opacity: 0.85;
+}

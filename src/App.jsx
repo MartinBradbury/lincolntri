@@ -1,16 +1,24 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./pages/Home.jsx";
 import NavBar from "./components/NavBar.jsx";
+import Footer from "./components/Footer.jsx";
+import Training from "./pages/Training.jsx";
+import TrainingSession from "./pages/TrainingSession.jsx";
+import Membership from "./pages/Membership.jsx";
 import "bootstrap/dist/css/bootstrap.min.css";
-import Footer from "./components/Footer";
 
 function App() {
   return (
     <BrowserRouter>
       <NavBar />
-      <Routes>
-        <Route path="/" element={<Home />} />
-      </Routes>
+      <main className="app-content">
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/training" element={<Training />} />
+          <Route path="/training/:sessionSlug" element={<TrainingSession />} />
+          <Route path="/membership" element={<Membership />} />
+        </Routes>
+      </main>
       <Footer />
     </BrowserRouter>
   );

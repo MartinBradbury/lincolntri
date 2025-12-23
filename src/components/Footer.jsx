@@ -1,4 +1,5 @@
 import "../styles/Footer.css";
+import { FaFacebookF, FaInstagram, FaEnvelope } from "react-icons/fa";
 
 function Footer() {
   return (
@@ -24,28 +25,35 @@ function Footer() {
               <a href="/training">Training</a>
             </li>
             <li>
-              <a href="/events">Events</a>
-            </li>
-            <li>
-              <a href="/join">Join Us</a>
+              <a href="/membership">Membership</a>
             </li>
           </ul>
         </div>
 
-        {/* Contact / socials */}
+        {/* Social icons */}
         <div className="footer-section">
           <h4>Connect</h4>
-          <ul>
-            <li>
-              <a href="#">Facebook</a>
-            </li>
-            <li>
-              <a href="#">Instagram</a>
-            </li>
-            <li>
-              <a href="#">Contact Us</a>
-            </li>
-          </ul>
+          <div className="social-icons">
+            <a
+              href="https://www.facebook.com/lincolntri"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Facebook"
+            >
+              <FaFacebookF />
+            </a>
+            <a
+              href="https://www.instagram.com/lincoln.triclub/"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Instagram"
+            >
+              <FaInstagram />
+            </a>
+            <a href="/membership" aria-label="Email">
+              <FaEnvelope />
+            </a>
+          </div>
         </div>
       </div>
 

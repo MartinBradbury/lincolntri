@@ -23,9 +23,8 @@ function NavBar() {
         <Navbar.Collapse id="main-navbar">
           <Nav className="ms-auto nav-links">
             <Nav.Link href="/">Home</Nav.Link>
-            <Nav.Link href="/training">Place Holder</Nav.Link>
-            <Nav.Link href="/log">Place Holder</Nav.Link>
-            <Nav.Link href="/profile">Place Holder</Nav.Link>
+            <Nav.Link href="/training">Training Sessions</Nav.Link>
+            <Nav.Link href="/membership">Membership</Nav.Link>
           </Nav>
         </Navbar.Collapse>
       </Container>

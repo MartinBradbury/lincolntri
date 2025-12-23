@@ -49,7 +49,7 @@ function Home() {
             Become part of a supportive, motivated triathlon community and gain
             access to coached sessions, club events and races.
           </p>
-          <a href="/join" className="cta-button">
+          <a href="/membership" className="cta-button">
             Join Us
           </a>
         </div>

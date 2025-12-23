@@ -1,0 +1,18 @@
+/* Global layout reset */
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+
+/* Root app container */
+#root {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Main content should grow to push footer down */
+.app-content {
+  flex: 1;
+}
