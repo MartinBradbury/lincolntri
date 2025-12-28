@@ -184,3 +184,11 @@
     opacity: 1;
   }
 }
+
+/* Mobile padding fix */
+@media (max-width: 600px) {
+  .membership-container {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
