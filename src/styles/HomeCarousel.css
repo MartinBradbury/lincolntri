@@ -1,0 +1,116 @@
+.home-carousel {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+}
+
+/* Each slide */
+.carousel-slide {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  opacity: 0;
+  animation: slideCycle 18s infinite;
+}
+
+/* Left image */
+.carousel-image {
+  flex: 1;
+  background-size: cover;
+  background-position: center;
+  transform: translateX(-80px);
+  opacity: 0;
+  animation: imageIn 1.2s ease forwards;
+  animation-delay: 0.4s;
+}
+
+/* Right content */
+.carousel-content {
+  flex: 1;
+  background: #111;
+  color: #fff;
+  padding: 5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  transform: translateX(80px);
+  opacity: 0;
+  animation: contentIn 1.2s ease forwards;
+  animation-delay: 0.7s;
+}
+
+.carousel-content h1 {
+  font-size: 3rem;
+  color: #ff0000;
+  margin-bottom: 1rem;
+}
+
+.carousel-content p {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  max-width: 520px;
+}
+
+.carousel-link {
+  margin-top: 2rem;
+  font-weight: 600;
+  color: #ff0000;
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+/* Slide timing */
+@keyframes slideCycle {
+  0% {
+    opacity: 0;
+    z-index: 0;
+  }
+  5% {
+    opacity: 1;
+    z-index: 1;
+  }
+  30% {
+    opacity: 1;
+  }
+  35% {
+    opacity: 0;
+    z-index: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+/* Animations */
+@keyframes imageIn {
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes contentIn {
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+/* Mobile */
+@media (max-width: 900px) {
+  .carousel-slide {
+    flex-direction: column;
+  }
+
+  .carousel-image {
+    height: 50vh;
+  }
+
+  .carousel-content {
+    padding: 3rem 2rem;
+  }
+
+  .carousel-content h1 {
+    font-size: 2rem;
+  }
+}

@@ -1,0 +1,100 @@
+.about-page {
+  padding: 4rem 1rem;
+}
+
+.about-container {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.about-container h1 {
+  color: #ff0000;
+  margin-bottom: 3rem;
+}
+
+/* HERO GRID */
+.about-hero-grid {
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  gap: 3rem;
+  align-items: start;
+  margin-bottom: 4rem;
+}
+
+/* VIDEO WRAP */
+.about-hero {
+  overflow: hidden;
+  background: transparent;
+}
+
+/* VIDEO */
+.about-video {
+  width: 100%;
+  height: auto;
+  min-height: 420px;
+
+  object-fit: cover;
+  display: block;
+
+  /* 🔥 ACTUAL FIX */
+  transform: translateY(-4%);
+}
+
+/* RIGHT CONTENT */
+.about-hero-content {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.intro {
+  font-size: 1.1rem;
+  line-height: 1.7;
+}
+
+/* Subsections inside hero */
+.about-subsection h2 {
+  color: #ff0000;
+  margin-bottom: 0.75rem;
+}
+
+.about-subsection p {
+  line-height: 1.7;
+  margin-bottom: 0.75rem;
+}
+
+.about-list {
+  padding-left: 1.2rem;
+  margin: 0;
+}
+
+.about-list li {
+  margin-bottom: 0.6rem;
+  line-height: 1.6;
+}
+
+/* Full-width sections */
+.about-section {
+  margin-bottom: 3rem;
+}
+
+.about-section h2 {
+  color: #ff0000;
+  margin-bottom: 1rem;
+}
+
+.about-section p {
+  line-height: 1.7;
+  max-width: 900px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .about-hero-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .about-video {
+    min-height: 240px;
+  }
+}

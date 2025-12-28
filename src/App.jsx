@@ -8,6 +8,7 @@ import Membership from "./pages/Membership.jsx";
 import Committee from "./pages/Commitee.jsx";
 import ScrollToTop from "./components/ScrollToTop";
 import "bootstrap/dist/css/bootstrap.min.css";
+import About from "./pages/About.jsx";
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
           <Route path="/training/:sessionSlug" element={<TrainingSession />} />
           <Route path="/membership" element={<Membership />} />
           <Route path="/committee" element={<Committee />} />
+          <Route path="/about" element={<About />} />
         </Routes>
       </main>
       <Footer />

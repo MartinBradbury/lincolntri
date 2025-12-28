@@ -1,87 +1,192 @@
-import { useRef } from "react";
+import { useRef, useState } from "react";
 import emailjs from "emailjs-com";
 import "../styles/Membership.css";
 import Test1 from "../assets/test1.jpg";
 
+/* ✅ REQUIRED for emailjs-com */
+emailjs.init("cov_dCTSvAbqhgE3i");
+
 function Membership() {
   const formRef = useRef();
+  const [showSuccess, setShowSuccess] = useState(false);
 
   const sendEmail = (e) => {
     e.preventDefault();
-    //EMAILJS WITH .ENV -- in PRODUCTION
-    // emailjs
-    //   .sendForm(
-    //     import.meta.env.VITE_EMAILJS_SERVICE_ID,
-    //     import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
-    //     formRef.current,
-    //     import.meta.env.VITE_EMAILJS_PUBLIC_KEY
-    //   )
 
     emailjs
       .sendForm(
         "service_lincolntri", // SERVICE ID
         "template_l4wg2fh", // TEMPLATE ID
-        formRef.current, // FORM REF
-        "cov_dCTSvAbqhgE3i" // PUBLIC KEY
+        formRef.current // FORM ELEMENT
       )
       .then(
         () => {
-          alert("Your enquiry has been sent successfully!");
+          setShowSuccess(true);
           formRef.current.reset();
         },
         (error) => {
+          console.error("EmailJS error:", error);
           alert("Something went wrong. Please try again.");
-          console.error(error);
         }
       );
   };
 
   return (
-    <section className="membership-page">
-      <div className="content">
-        <h1>Membership</h1>
+    <section className="membership-info">
+      <div className="membership-container">
+        <h2>Membership Fees & Benefits</h2>
 
-        {/* Membership information */}
-        <div className="membership-info">
-          <p>
-            Lincoln Triathlon Club offers a range of membership options designed
-            to suit athletes of all abilities. Whether you’re new to triathlon
-            or an experienced competitor, our membership provides access to
-            high-quality coaching, structured training sessions, and a
-            supportive club environment.
-          </p>
+        <p>
+          Lincoln Triathlon Club offers a friendly, inclusive environment for
+          athletes of all abilities. Membership provides access to structured
+          training, competitive and social events, and a supportive coaching
+          team.
+        </p>
 
-          <p>
-            Membership costs and options will be listed here. Placeholder text
-            can later be replaced with full pricing details and benefits.
-          </p>
+        <div className="membership-pricing">
+          <div>
+            <h3>Annual Membership Fees</h3>
+            <ul>
+              <li>
+                <strong>Adult (18–60):</strong> £25 per year
+              </li>
+              <li>
+                <strong>Concession:</strong> £19 per year
+              </li>
+              <li className="sub-text">
+                (Juniors under 18, students in full-time education with valid
+                ID, and seniors aged 60+)
+              </li>
+              <li>
+                <strong>Family Membership:</strong> £44 per year
+              </li>
+              <li className="sub-text">
+                (Maximum of 2 adults and any children under 18)
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <h3>Membership Benefits</h3>
+            <ul>
+              <li>
+                Access to coached swimming, running, and triathlon training
+              </li>
+              <li>Participation in club races and social events</li>
+              <li>Access to Club Manager booking systems</li>
+              <li>Members-only Facebook group</li>
+              <li>Supportive coaching and inclusive club environment</li>
+            </ul>
+          </div>
         </div>
 
-        {/* Image + Form section */}
-        <div className="membership-enquiry">
-          {/* Left: image */}
+        <h2>Training Sessions</h2>
+
+        <p>
+          Training sessions are paid individually and booked via Club Manager.
+          Session fees help cover coaching and venue costs.
+        </p>
+
+        <div className="training-fees">
+          <ul>
+            <li>
+              <strong>Swimming (Adult):</strong> £5.00
+            </li>
+            <li>
+              <strong>Swimming (Junior):</strong> £4.50
+            </li>
+            <li>
+              <strong>Track / Town Run (Adult):</strong> £2.50
+            </li>
+            <li>
+              <strong>South Common Run:</strong> Free
+            </li>
+          </ul>
+        </div>
+
+        <p className="note">
+          Junior track sessions are charged at £10 per month via direct debit.
+        </p>
+
+        <h2>Swim Session Times (2025)</h2>
+
+        <ul className="session-times">
+          <li>
+            <strong>Tuesday:</strong> 8:00 – 9:00pm (5 lanes, coached) –
+            Yarborough Leisure Centre
+          </li>
+          <li>
+            <strong>Thursday:</strong> 8:00 – 9:00pm (5 lanes, coached) – Priory
+            LSST
+          </li>
+          <li>
+            <strong>Sunday:</strong> Winter training 7:00 – 8:00am (5 lanes,
+            coached) – Yarborough Leisure Centre
+          </li>
+        </ul>
+
+        <h2>Track Session Times (2025)</h2>
+
+        <ul className="session-times">
+          <li>
+            <strong>Friday:</strong> 7:00 – 8:00pm (8-lane athletics track,
+            coached) – Yarborough Leisure Centre
+          </li>
+        </ul>
+
+        <h2>How to Join</h2>
+
+        <p>
+          To join Lincoln Triathlon Club, please complete the membership enquiry
+          form below. You will be sent a membership form to complete and return.
+          Once received, the Treasurer will issue an invoice and set up payment
+          via direct debit.
+        </p>
+
+        <h2>Club Policies & Conduct</h2>
+
+        <p>
+          All members are required to accept and adhere to the club’s Terms &
+          Conditions, Code of Conduct, and British Triathlon Federation rules.
+          Policies are available on the link below and members-only channels.
+        </p>
+
+        <a href="#">Policies</a>
+
+        <p className="note">
+          Members who fail to meet expected standards may be subject to
+          disciplinary action, including suspension or removal from the club.
+        </p>
+
+        {/* Membership Enquiry */}
+        <section className="membership-enquiry">
           <div className="membership-image">
             <img src={Test1} alt="Lincoln Triathlon Club training" />
           </div>
 
-          {/* Right: form */}
           <div className="membership-form">
-            <h2>Membership Enquiry</h2>
+            <h3>Membership Enquiry</h3>
 
             <form ref={formRef} onSubmit={sendEmail}>
               <div className="form-group">
-                <label>Full Name</label>
-                <input type="text" name="name" required />
+                <label htmlFor="name">Full Name</label>
+                <input type="text" name="name" id="name" required />
               </div>
 
               <div className="form-group">
-                <label>Email Address</label>
-                <input type="email" name="email" required />
+                <label htmlFor="email">Email Address</label>
+                <input type="email" name="email" id="email" required />
               </div>
 
               <div className="form-group">
-                <label>Message</label>
-                <textarea name="message" rows="5" required />
+                <label htmlFor="message">Message</label>
+                <textarea
+                  name="message"
+                  id="message"
+                  rows="5"
+                  placeholder="Tell us a little about yourself and which sessions you're interested in..."
+                  required
+                />
               </div>
 
               <button type="submit" className="submit-btn">
@@ -89,8 +194,22 @@ function Membership() {
               </button>
             </form>
           </div>
-        </div>
+        </section>
       </div>
+
+      {/* Success Popup */}
+      {showSuccess && (
+        <div className="success-overlay">
+          <div className="success-modal">
+            <h3>Enquiry Sent 🎉</h3>
+            <p>
+              Thank you for getting in touch. A member of the committee will
+              respond to your enquiry shortly.
+            </p>
+            <button onClick={() => setShowSuccess(false)}>Close</button>
+          </div>
+        </div>
+      )}
     </section>
   );
 }
