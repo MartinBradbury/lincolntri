@@ -48,17 +48,13 @@ function Membership() {
             <h3>Annual Membership Fees</h3>
             <ul>
               <li>
-                <strong>Adult (18–60):</strong> £25 per year
+                <strong>Adult (18–60):</strong> £32 per year
               </li>
               <li>
-                <strong>Concession:</strong> £19 per year
-              </li>
-              <li className="sub-text">
-                (Juniors under 18, students in full-time education with valid
-                ID, and seniors aged 60+)
+                <strong>Junior / Young Person (18-25):</strong> £20 per year
               </li>
               <li>
-                <strong>Family Membership:</strong> £44 per year
+                <strong>Family Membership:</strong> £55 per year
               </li>
               <li className="sub-text">
                 (Maximum of 2 adults and any children under 18)
@@ -90,13 +86,13 @@ function Membership() {
         <div className="training-fees">
           <ul>
             <li>
-              <strong>Swimming (Adult):</strong> £5.00
+              <strong>Swimming (Adult):</strong> £5.50
             </li>
             <li>
-              <strong>Swimming (Junior):</strong> £4.50
+              <strong>Swimming (Junior):</strong> £5
             </li>
             <li>
-              <strong>Track / Town Run (Adult):</strong> £2.50
+              <strong>Track / Town Run (Adult):</strong> £3.50
             </li>
             <li>
               <strong>South Common Run:</strong> Free
@@ -116,8 +112,8 @@ function Membership() {
             Yarborough Leisure Centre
           </li>
           <li>
-            <strong>Thursday:</strong> 8:00 – 9:00pm (5 lanes, coached) – Priory
-            LSST
+            <strong>Thursday:</strong> 8:00 – 9:00pm (4 lanes, coached) – The
+            Priory Lincoln Academy
           </li>
           <li>
             <strong>Sunday:</strong> Winter training 7:00 – 8:00am (5 lanes,
