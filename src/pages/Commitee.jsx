@@ -19,25 +19,6 @@ function Committee() {
           details of our current committee members.
         </p>
 
-        {/* Policies */}
-        <section className="committee-section">
-          <h2>Club Policies</h2>
-          <ul className="document-list">
-            <li>
-              <a href="#">Safeguarding Policy</a>
-            </li>
-            <li>
-              <a href="#">Equality & Inclusion Policy</a>
-            </li>
-            <li>
-              <a href="#">Code of Conduct</a>
-            </li>
-            <li>
-              <a href="#">Health & Safety Policy</a>
-            </li>
-          </ul>
-        </section>
-
         {/* Terms of Reference */}
         <section className="committee-section">
           <h2>Terms of Reference</h2>

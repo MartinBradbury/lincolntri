@@ -147,7 +147,7 @@ function Membership() {
           Policies are available on the link below and members-only channels.
         </p>
 
-        <a href="#">Policies</a>
+        <a href="/policies">Policies</a>
 
         <p className="note">
           Members who fail to meet expected standards may be subject to
