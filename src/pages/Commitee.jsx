@@ -243,7 +243,7 @@ function Committee() {
               </div>
               <div className="committee-content">
                 <h3>Head Coach</h3>
-                <h4>Steve Palye</h4>
+                <h4>Steve Paley</h4>
                 <p>
                   Following a competitive rugby playing background that came to
                   an end as a result of a significant back injury my triathlon
