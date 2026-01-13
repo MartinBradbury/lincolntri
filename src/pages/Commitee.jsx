@@ -85,23 +85,29 @@ function Committee() {
                 <h3>Chairperson</h3>
                 <h4>Gaz Taylor</h4>
                 <p>
-                  I have had a varied history in sport since my school days,
-                  starting with cricket, rugby and football through school and
-                  my RAF career. I served in the RAF for 22 years and am now a
-                  proud veteran. In my youth I held the best batting average at
-                  Batley Central Cricket Club and represented West Riding at
-                  under-16 rugby union. My later years were more
-                  football-focused in the RAF, representing various units in the
-                  John Smith Sunday League. After a couple of non-sporting
-                  injuries, I turned to circuits, running and cycling primarily
-                  for fitness. In 2016, looking for an outlet for wellbeing, a
-                  cousin encouraged me to try triathlon. Despite initially
-                  laughing it off, I raced my first sprint triathlon at Gosfield
-                  Lake that July, joined Lincoln Tri the same year, and have
-                  never looked back. My love for the club’s family and community
-                  spirit led me to volunteer as Chair, helping ensure the club
-                  continues to provide opportunities for others to enter
-                  triathlon and related events.
+                  I have had a varied history in some sport or another since my
+                  school days. I love sports, it started with cricket, rugby and
+                  football through school and my RAF career. I served in the RAF
+                  for 22 years and am now a proud veteran. I have some accolades
+                  from my youth in that I still hold the best batting average in
+                  the Batley Central Cricket Club Wisden's (ok the club no
+                  longer exists and it was 35 years ago, but I held it for a
+                  decade before they came to an end). I also represented West
+                  Riding at under 16 rugby union. My later years were more
+                  football oriented in the RAF, representing my various RAF
+                  units and playing in the John Smith Sunday League. After a
+                  couple of non-sporting injuries, I decided to stick with
+                  circuits, running and cycling, more for a fitness need in the
+                  RAF, rather than competitive. In 2016, I had a need for an
+                  outlet for wellbeing purposes and one of my cousins suggested
+                  that I should try triathlons. I laughed, called him insane and
+                  in July that same year, I raced with him in my first sprint
+                  triathlon at Gosfield Lake. I joined LincolTri that same year
+                  and I've never looked back. My love for the club and its
+                  family/community spirit is why I took the opportunity to
+                  volunteer as your Chair, to ensure that the club continues to
+                  provide opportunities for entry into Triathlons and other
+                  related events as it has for me.
                 </p>
               </div>
             </div>
@@ -233,7 +239,7 @@ function Committee() {
             {/* Head Coach */}
             <div className="committee-card">
               <div className="committee-image">
-                <img src={steve} alt="Steve Palye" />
+                <img src={steve} alt="Steve Paley" />
               </div>
               <div className="committee-content">
                 <h3>Head Coach</h3>
