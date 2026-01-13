@@ -1,0 +1,144 @@
+/* ================================
+   Role page wrapper
+================================ */
+.role-page {
+  padding: 4rem 1rem;
+
+  /* Subtle page motion */
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeUp 0.8s ease-out forwards;
+}
+
+/* ================================
+   Headings
+================================ */
+.role-page h1 {
+  color: #ff0000;
+  margin-bottom: 1.5rem;
+}
+
+/* ================================
+   Meta information
+================================ */
+.role-meta {
+  margin-bottom: 3rem;
+  font-size: 0.95rem;
+  color: #555;
+}
+
+/* ================================
+   Sections
+================================ */
+.role-section {
+  margin-bottom: 3rem;
+}
+
+.role-section h2 {
+  color: #ff0000;
+  margin-bottom: 1rem;
+  font-size: 1.35rem;
+}
+
+/* ================================
+   Paragraphs
+================================ */
+.role-section p {
+  max-width: 850px;
+  line-height: 1.7;
+  font-size: 1rem;
+  color: #333;
+}
+
+/* ================================
+   Lists
+================================ */
+.role-section ul {
+  padding-left: 1.2rem;
+  max-width: 900px;
+}
+
+.role-section li {
+  margin-bottom: 0.75rem;
+  line-height: 1.6;
+  font-size: 0.95rem;
+}
+
+/* ================================
+   Animation
+================================ */
+@keyframes fadeUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ================================
+   Responsive
+================================ */
+@media (max-width: 768px) {
+  .role-page {
+    padding: 3rem 1rem;
+  }
+
+  .role-section h2 {
+    font-size: 1.25rem;
+  }
+}
+
+/* ================================
+   Reduced motion (accessibility)
+================================ */
+@media (prefers-reduced-motion: reduce) {
+  .role-page {
+    animation: none;
+    opacity: 1;
+    transform: none;
+  }
+}
+
+/* ================================
+   Role page footer
+================================ */
+.role-footer {
+  margin-top: 4rem;
+  display: flex;
+  justify-content: center;
+}
+
+/* ================================
+   Back button
+================================ */
+.back-button {
+  display: inline-block;
+  padding: 0.75rem 1.75rem;
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #ffffff;
+  background: #ff0000;
+  border-radius: 6px;
+  text-decoration: none;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, opacity 0.2s ease;
+}
+
+.back-button:hover {
+  opacity: 0.9;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+}
+
+/* Keyboard accessibility */
+.back-button:focus-visible {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(255, 0, 0, 0.35);
+}
+
+/* ================================
+   Mobile spacing
+================================ */
+@media (max-width: 600px) {
+  .role-footer {
+    margin-top: 3rem;
+  }
+}

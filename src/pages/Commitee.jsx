@@ -1,4 +1,5 @@
 import "../styles/Committee.css";
+import { Link } from "react-router-dom";
 import Test1 from "../assets/test1.jpg";
 import gaz2 from "../assets/gaz2.jpg";
 import steve from "../assets/steve.jpg";
@@ -48,25 +49,39 @@ function Committee() {
 
           <ul className="document-list">
             <li>
-              <a href="#">Chairperson Role Description</a>
+              <Link to="/committee/roles/chairperson">
+                Chairperson Role Description
+              </Link>
             </li>
             <li>
-              <a href="#">Treasurer Role Description</a>
+              <Link to="/committee/roles/treasurer">
+                Treasurer Role Description
+              </Link>
             </li>
             <li>
-              <a href="#">Secretary Role Description</a>
+              <Link to="/committee/roles/secretary">
+                Secretary Role Description
+              </Link>
             </li>
             <li>
-              <a href="#">Social Media Role Description</a>
+              <Link to="/committee/roles/social-media-officer">
+                Social Media Officer Role Description
+              </Link>
             </li>
             <li>
-              <a href="#">Membership Role Description</a>
+              <Link to="/committee/roles/membership-secretary">
+                Membership Secretary Role Description
+              </Link>
             </li>
             <li>
-              <a href="#">Welfare Officer Role Description</a>
+              <Link to="/committee/roles/welfare-officer">
+                Welfare Officer Role Description
+              </Link>
             </li>
             <li>
-              <a href="#">Head Coach Role Description</a>
+              <Link to="/committee/roles/head-coach">
+                Head Coach Role Description
+              </Link>
             </li>
           </ul>
         </section>
