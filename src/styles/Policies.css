@@ -1,0 +1,108 @@
+/* ================================
+   Page wrapper
+================================ */
+.policies-page {
+  padding: 4rem 1rem;
+
+  /* Subtle page motion */
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeUp 0.8s ease-out forwards;
+}
+
+/* ================================
+   Intro
+================================ */
+.policies-page h1 {
+  color: #ff0000;
+  margin-bottom: 1rem;
+}
+
+.intro-text {
+  max-width: 850px;
+  font-size: 1.05rem;
+  line-height: 1.7;
+  margin-bottom: 3.5rem;
+}
+
+/* ================================
+   Policy list
+================================ */
+.policies-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.policy-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 1.25rem 0;
+  border-bottom: 1px solid #e5e5e5;
+  gap: 1rem;
+}
+
+.policy-title {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #111;
+}
+
+/* ================================
+   Links
+================================ */
+.policy-links {
+  display: flex;
+  gap: 1.25rem;
+  flex-shrink: 0;
+}
+
+.policy-links a {
+  color: #ff0000;
+  font-weight: 600;
+  font-size: 0.85rem;
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition: border-color 0.2s ease;
+}
+
+.policy-links a:hover {
+  border-color: #ff0000;
+}
+
+/* ================================
+   Animation
+================================ */
+@keyframes fadeUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ================================
+   Responsive
+================================ */
+@media (max-width: 700px) {
+  .policy-item {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .policy-links {
+    gap: 1rem;
+  }
+}
+
+/* ================================
+   Reduced motion
+================================ */
+@media (prefers-reduced-motion: reduce) {
+  .policies-page {
+    animation: none;
+    opacity: 1;
+    transform: none;
+  }
+}

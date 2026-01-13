@@ -5,20 +5,21 @@ export const trainingSessions = {
     type: "Swim",
     audience: "Adults and Juniors",
     description:
-      "Our Tuesday swim session is a progressive coached session aimed at improving technique, endurance and confidence in the water. INFORMATION TO BE ADDED REGARDING SESSIONS ET",
+      "This coached swim session focuses on developing efficient technique, endurance, and confidence in the water for triathletes of all abilities. Sessions include structured drills and sets aimed at improving stroke mechanics, pacing, and overall swim efficiency, helping athletes become stronger and more relaxed swimmers on race day.",
     location: {
       name: "Yarborough Leisure Centre",
       address: "Riseholme Rd, Lincoln LN1 3SP, England",
       mapQuery: "Yarborough Leisure Centre Lincoln England",
     },
   },
+
   "thursday-swim": {
     title: "Thursday Swim – Priory LSST Pool",
     time: "8:00pm – 9:00pm",
     type: "Swim",
     audience: "Adults and Juniors",
     description:
-      "Our Thursday swim session is a progressive coached session aimed at improving technique, endurance and confidence in the water. INFORMATION TO BE ADDED REGARDING SESSIONS ET",
+      "A structured coached swim session designed to support triathletes in improving technique, stamina, and swim confidence. The session incorporates drill-based work and endurance sets, with coaching feedback to help swimmers develop a more efficient and sustainable stroke for training and competition.",
     location: {
       name: "The Priory LSST School",
       address:
@@ -26,13 +27,14 @@ export const trainingSessions = {
       mapQuery: "The Priory LSST Pool",
     },
   },
+
   "friday-track": {
     title: "Friday Track – Yarborough Leisure Centre",
     time: "7:00pm – 8:00pm",
     type: "Track Run",
     audience: "Adults and Juniors",
     description:
-      "Friendly track session. INFORMATION TO BE ADDED REGARDING SESSIONS ET",
+      "This coached track session focuses on developing running speed, technique, and endurance specifically for triathlon. Sessions include structured intervals, pacing work, and technique drills, helping athletes improve running efficiency and resilience while reducing injury risk and supporting strong run performances off the bike.",
     location: {
       name: "Yarborough Leisure Centre",
       address: "Riseholme Rd, Lincoln LN1 3SP, England",

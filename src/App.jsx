@@ -17,6 +17,7 @@ import WelfareOfficer from "./pages/roles/WelfareOfficer";
 import Chairperson from "./pages/roles/Chairperson";
 import MembershipSecretary from "./pages/roles/MembershipSecretary";
 import SocialMediaOfficer from "./pages/roles/SocialMediaOfficer";
+import Policies from "./pages/policies/policies.jsx";
 
 function App() {
   return (
@@ -32,6 +33,7 @@ function App() {
           <Route path="/committee" element={<Committee />} />
           <Route path="/about" element={<About />} />
           <Route path="/clubevents" element={<ClubEvents />} />
+          <Route path="/policies" element={<Policies />} />
 
           {/* Role Pages */}
           <Route path="/committee/roles/head-coach" element={<HeadCoach />} />

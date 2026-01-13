@@ -28,6 +28,7 @@ function NavBar() {
             <Nav.Link href="/membership">Membership</Nav.Link>
             <Nav.Link href="/committee">Committee</Nav.Link>
             <Nav.Link href="/clubevents">Club Events 2026</Nav.Link>
+            <Nav.Link href="/policies">Club Policies</Nav.Link>
           </Nav>
         </Navbar.Collapse>
       </Container>
