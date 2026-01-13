@@ -32,7 +32,7 @@ function Membership() {
   };
 
   return (
-    <section className="membership-info">
+    <section className="membership-page membership-info">
       <div className="membership-container">
         <h2>Membership Fees & Benefits</h2>
 

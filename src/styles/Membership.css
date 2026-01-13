@@ -1,20 +1,33 @@
-/* Page spacing */
+/* ================================
+   Page spacing
+================================ */
 .membership-page {
   padding: 4rem 1rem;
+
+  /* Subtle page motion */
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeUp 0.8s ease-out forwards;
 }
 
-/* Main content container */
+/* ================================
+   Main content container
+================================ */
 .membership-container {
   max-width: 1000px;
   margin: 0 auto;
 }
 
-/* Section spacing */
+/* ================================
+   Section spacing
+================================ */
 .membership-info {
   margin-bottom: 4rem;
 }
 
-/* Headings */
+/* ================================
+   Headings
+================================ */
 .membership-info h2 {
   color: #ff0000;
   margin: 3.5rem 0 1.25rem;
@@ -25,7 +38,9 @@
   margin-top: 2rem;
 }
 
-/* Paragraphs */
+/* ================================
+   Paragraphs
+================================ */
 .membership-info p {
   max-width: 800px;
   line-height: 1.75;
@@ -33,7 +48,9 @@
   font-size: 1rem;
 }
 
-/* Two-column pricing / benefits block */
+/* ================================
+   Two-column pricing / benefits block
+================================ */
 .membership-pricing {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -45,14 +62,18 @@
   border-radius: 8px;
 }
 
-/* Sub-headings */
+/* ================================
+   Sub-headings
+================================ */
 .membership-pricing h3 {
   margin-bottom: 1rem;
   font-size: 1.15rem;
   color: #111;
 }
 
-/* Lists */
+/* ================================
+   Lists
+================================ */
 .membership-pricing ul,
 .training-fees ul,
 .session-times {
@@ -68,14 +89,18 @@
   font-size: 0.95rem;
 }
 
-/* Subtext (eligibility notes) */
+/* ================================
+   Subtext (eligibility notes)
+================================ */
 .sub-text {
   font-size: 0.85rem;
   color: #666;
   margin-left: 1rem;
 }
 
-/* Training fees block */
+/* ================================
+   Training fees block
+================================ */
 .training-fees {
   margin: 2rem 0;
   padding: 2rem;
@@ -84,12 +109,16 @@
   border-radius: 8px;
 }
 
-/* Session times */
+/* ================================
+   Session times
+================================ */
 .session-times {
   margin: 1.5rem 0 3rem;
 }
 
-/* Notes */
+/* ================================
+   Notes
+================================ */
 .note {
   font-size: 0.9rem;
   color: #555;
@@ -97,7 +126,9 @@
   max-width: 750px;
 }
 
-/* Contact */
+/* ================================
+   Contact
+================================ */
 .contact {
   margin: 1.5rem 0 3rem;
 }
@@ -112,7 +143,19 @@
   text-decoration: underline;
 }
 
-/* Responsive */
+/* ================================
+   Animations
+================================ */
+@keyframes fadeUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ================================
+   Responsive
+================================ */
 @media (max-width: 900px) {
   .membership-pricing {
     grid-template-columns: 1fr;
@@ -124,7 +167,9 @@
   }
 }
 
-/* Success popup overlay */
+/* ================================
+   Success popup overlay
+================================ */
 .success-overlay {
   position: fixed;
   inset: 0;
@@ -135,7 +180,9 @@
   z-index: 1000;
 }
 
-/* Modal */
+/* ================================
+   Modal
+================================ */
 .success-modal {
   background: #ffffff;
   border-radius: 10px;
@@ -157,7 +204,9 @@
   margin-bottom: 1.5rem;
 }
 
-/* Button */
+/* ================================
+   Button
+================================ */
 .success-modal button {
   background: #ff0000;
   color: #ffffff;
@@ -173,7 +222,9 @@
   opacity: 0.9;
 }
 
-/* Animation */
+/* ================================
+   Modal animation
+================================ */
 @keyframes popIn {
   from {
     transform: scale(0.9);
@@ -185,10 +236,23 @@
   }
 }
 
-/* Mobile padding fix */
+/* ================================
+   Mobile padding fix
+================================ */
 @media (max-width: 600px) {
   .membership-container {
     padding-left: 1rem;
     padding-right: 1rem;
+  }
+}
+
+/* ================================
+   Reduced motion (accessibility)
+================================ */
+@media (prefers-reduced-motion: reduce) {
+  .membership-page {
+    animation: none;
+    opacity: 1;
+    transform: none;
   }
 }

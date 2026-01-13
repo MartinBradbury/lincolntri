@@ -1,9 +1,18 @@
-/* Page spacing */
+/* ================================
+   Page spacing
+================================ */
 .training-page {
   padding: 4rem 1rem;
+
+  /* Subtle page motion */
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeUp 0.8s ease-out forwards;
 }
 
-/* Intro text */
+/* ================================
+   Intro text
+================================ */
 .intro-text {
   max-width: 800px;
   font-size: 1.05rem;
@@ -11,14 +20,18 @@
   margin-bottom: 3rem;
 }
 
-/* Grid layout */
+/* ================================
+   Grid layout
+================================ */
 .training-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 2.5rem;
 }
 
-/* Card styling */
+/* ================================
+   Card styling
+================================ */
 .training-card {
   background: #ffffff;
   border: 1px solid #e5e5e5;
@@ -34,7 +47,9 @@
   transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
 }
 
-/* Hover / focus */
+/* ================================
+   Hover / focus
+================================ */
 .training-card:hover,
 .training-card:focus {
   transform: translateY(-4px);
@@ -42,7 +57,9 @@
   border-color: rgba(255, 0, 0, 0.4);
 }
 
-/* Title */
+/* ================================
+   Title
+================================ */
 .training-card h3 {
   color: #ff0000;
   font-size: 1.25rem;
@@ -51,7 +68,9 @@
   margin: 0;
 }
 
-/* Description */
+/* ================================
+   Description
+================================ */
 .training-card p {
   font-size: 0.95rem;
   line-height: 1.6;
@@ -59,7 +78,9 @@
   margin: 0;
 }
 
-/* Tag */
+/* ================================
+   Tag
+================================ */
 .training-card .tag {
   margin-top: auto;
   background: #ff0000;
@@ -71,7 +92,9 @@
   letter-spacing: 0.04em;
 }
 
-/* Keyboard accessibility */
+/* ================================
+   Keyboard accessibility
+================================ */
 .training-card:focus {
   outline: none;
 }
@@ -80,7 +103,9 @@
   box-shadow: 0 0 0 3px rgba(255, 0, 0, 0.3);
 }
 
-/* Responsive */
+/* ================================
+   Responsive grids
+================================ */
 @media (max-width: 900px) {
   .training-grid {
     grid-template-columns: 1fr 1fr;
@@ -103,7 +128,9 @@
   }
 }
 
-/* Enquiry section */
+/* ================================
+   Enquiry section
+================================ */
 .membership-enquiry {
   margin-top: 5rem;
   display: grid;
@@ -112,7 +139,9 @@
   align-items: stretch;
 }
 
-/* Image */
+/* ================================
+   Image
+================================ */
 .membership-image img {
   width: 100%;
   height: 100%;
@@ -120,7 +149,9 @@
   border-radius: 8px;
 }
 
-/* Form container */
+/* ================================
+   Form container
+================================ */
 .membership-form {
   background: #ffffff;
   border: 1px solid #e5e5e5;
@@ -133,7 +164,9 @@
   margin-bottom: 1.5rem;
 }
 
-/* Form fields */
+/* ================================
+   Form fields
+================================ */
 .form-group {
   display: flex;
   flex-direction: column;
@@ -160,7 +193,9 @@
   border-color: #ff0000;
 }
 
-/* Submit button */
+/* ================================
+   Submit button
+================================ */
 .submit-btn {
   margin-top: 0.5rem;
   background: #ff0000;
@@ -177,7 +212,19 @@
   opacity: 0.9;
 }
 
-/* Responsive */
+/* ================================
+   Animation
+================================ */
+@keyframes fadeUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ================================
+   Responsive enquiry layout
+================================ */
 @media (max-width: 900px) {
   .membership-enquiry {
     grid-template-columns: 1fr;
@@ -185,5 +232,16 @@
 
   .membership-image img {
     height: 260px;
+  }
+}
+
+/* ================================
+   Reduced motion (accessibility)
+================================ */
+@media (prefers-reduced-motion: reduce) {
+  .training-page {
+    animation: none;
+    opacity: 1;
+    transform: none;
   }
 }

@@ -26,8 +26,8 @@ function NavBar() {
             <Nav.Link href="/about">About Us</Nav.Link>
             <Nav.Link href="/training">Training Sessions</Nav.Link>
             <Nav.Link href="/membership">Membership</Nav.Link>
-            <Nav.Link href="/Committee">Committee</Nav.Link>
-            <Nav.Link href="#">Club News</Nav.Link>
+            <Nav.Link href="/committee">Committee</Nav.Link>
+            <Nav.Link href="/clubevents">Club Events 2026</Nav.Link>
           </Nav>
         </Navbar.Collapse>
       </Container>

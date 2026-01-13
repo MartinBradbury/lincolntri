@@ -11,12 +11,13 @@ function Home() {
         <div className="content">
           <h1>Welcome to Lincoln Triathlon Club</h1>
           <p>
-            We are a friendly, inclusive triathlon club welcoming athletes of
-            all abilities — from complete beginners to experienced racers.
+            Lincoln Tri is a fun, friendly and family-orientated triathlon and
+            multisport club based in Lincoln.
           </p>
           <p>
-            Whether you’re here to train, race, or just enjoy the community,
-            Lincoln Tri is the place to grow.
+            Our members range from absolute beginners learning the triathlon
+            ropes to experienced athletes competing at World and European
+            Championship level as part of the GB Age Group Team.
           </p>
         </div>
       </section>
@@ -28,14 +29,14 @@ function Home() {
             {/* background image handled in CSS */}
           </div>
           <div className="feature-text">
-            <h2>Train With Purpose</h2>
+            <h2>Multisport for Everyone</h2>
             <p>
-              We offer structured swim, bike and run sessions led by qualified
-              coaches, with multiple sessions each week.
+              Our athletes compete across a wide range of disciplines including
+              triathlon, duathlon, aquabike and swimrun events.
             </p>
             <p>
-              Sessions are designed to help you improve confidently and safely,
-              whatever your starting point.
+              From sprint distance through to Outlaw-distance races, we support
+              members at every stage of their multisport journey.
             </p>
           </div>
         </div>
@@ -44,13 +45,14 @@ function Home() {
       {/* Membership CTA */}
       <section className="home-section cta">
         <div className="content">
-          <h2>Join Lincoln Tri</h2>
+          <h2>Train, Race and Grow With Us</h2>
           <p>
-            Become part of a supportive, motivated triathlon community and gain
-            access to coached sessions, club events and races.
+            Whether you are new to triathlon or an experienced competitive
+            athlete, we aim to help our members develop skills, confidence and a
+            lifelong love of multisport.
           </p>
           <a href="/membership" className="cta-button">
-            Join Us
+            Join Lincoln Tri
           </a>
         </div>
       </section>

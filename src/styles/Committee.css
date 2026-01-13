@@ -1,8 +1,18 @@
+/* ================================
+   Page wrapper
+================================ */
 .committee-page {
   padding: 4rem 1rem;
+
+  /* Subtle page motion */
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeUp 0.8s ease-out forwards;
 }
 
-/* Intro */
+/* ================================
+   Intro
+================================ */
 .committee-page h1 {
   color: #ff0000;
   margin-bottom: 1rem;
@@ -15,7 +25,9 @@
   margin-bottom: 4rem;
 }
 
-/* Sections */
+/* ================================
+   Sections
+================================ */
 .committee-section {
   margin-bottom: 4rem;
 }
@@ -26,7 +38,9 @@
   font-size: 1.4rem;
 }
 
-/* Document lists */
+/* ================================
+   Document lists
+================================ */
 .document-list {
   list-style: none;
   padding: 0;
@@ -50,14 +64,18 @@
   border-color: #ff0000;
 }
 
-/* Committee grid */
+/* ================================
+   Committee grid
+================================ */
 .committee-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 2rem;
 }
 
-/* Committee cards */
+/* ================================
+   Committee cards
+================================ */
 .committee-card {
   background: #ffffff;
   border: 1px solid #e5e5e5;
@@ -90,7 +108,19 @@
   margin: 0;
 }
 
-/* Responsive */
+/* ================================
+   Animations
+================================ */
+@keyframes fadeUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ================================
+   Responsive
+================================ */
 @media (max-width: 1100px) {
   .committee-grid {
     grid-template-columns: repeat(2, 1fr);
@@ -100,5 +130,16 @@
 @media (max-width: 600px) {
   .committee-grid {
     grid-template-columns: 1fr;
+  }
+}
+
+/* ================================
+   Reduced motion (accessibility)
+================================ */
+@media (prefers-reduced-motion: reduce) {
+  .committee-page {
+    animation: none;
+    opacity: 1;
+    transform: none;
   }
 }

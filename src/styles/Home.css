@@ -1,6 +1,13 @@
-/* Shared section styling */
+/* ================================
+   Shared section styling
+================================ */
 .home-section {
   padding: 4rem 1rem;
+
+  /* Subtle page motion */
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeUp 0.8s ease-out forwards;
 }
 
 .content {
@@ -8,7 +15,20 @@
   margin: 0 auto;
 }
 
-/* Intro */
+/* Stagger section entrance */
+.home-section:nth-of-type(1) {
+  animation-delay: 0.1s;
+}
+.home-section:nth-of-type(2) {
+  animation-delay: 0.2s;
+}
+.home-section:nth-of-type(3) {
+  animation-delay: 0.3s;
+}
+
+/* ================================
+   Intro
+================================ */
 .intro h1 {
   color: #ff0000;
   font-size: 2.5rem;
@@ -21,7 +41,9 @@
   max-width: 800px;
 }
 
-/* Feature section */
+/* ================================
+   Feature section
+================================ */
 .feature {
   background-color: #f8f8f8;
 }
@@ -46,7 +68,9 @@
   margin-bottom: 1rem;
 }
 
-/* CTA */
+/* ================================
+   CTA
+================================ */
 .cta {
   text-align: center;
   background: #ffffff;
@@ -73,7 +97,19 @@
   background-color: #cc0000;
 }
 
-/* Responsive */
+/* ================================
+   Animations
+================================ */
+@keyframes fadeUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ================================
+   Responsive
+================================ */
 @media (max-width: 768px) {
   .feature-grid {
     grid-template-columns: 1fr;
@@ -81,5 +117,16 @@
 
   .feature-image {
     height: 250px;
+  }
+}
+
+/* ================================
+   Reduced motion (accessibility)
+================================ */
+@media (prefers-reduced-motion: reduce) {
+  .home-section {
+    animation: none;
+    opacity: 1;
+    transform: none;
   }
 }
