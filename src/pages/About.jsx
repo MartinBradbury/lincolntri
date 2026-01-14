@@ -80,25 +80,6 @@ function About() {
                 qualified coaches and dedicated volunteers.
               </p>
             </div>
-
-            <div className="about-subsection">
-              <h2>What We Offer</h2>
-              <ul className="about-list">
-                <li>
-                  Coached swim, run, and triathlon-specific training sessions
-                </li>
-                <li>
-                  Opportunities to race in triathlons, duathlons, aquathlons and
-                  running events
-                </li>
-                <li>Social and club-organised events throughout the year</li>
-                <li>
-                  Support and guidance for beginners and experienced athletes
-                  alike
-                </li>
-                <li>Access to club communication and booking platforms</li>
-              </ul>
-            </div>
             <div className="about-section">
               <h2>Our Ethos</h2>
               <p>
