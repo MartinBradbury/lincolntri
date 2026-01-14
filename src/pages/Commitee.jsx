@@ -262,6 +262,11 @@ function Committee() {
           </div>
         </section>
       </div>
+      <div className="role-footer">
+        <Link to="/membership" className="back-button">
+          Enquire Now
+        </Link>
+      </div>
     </section>
   );
 }

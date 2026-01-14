@@ -22,7 +22,7 @@ function Training() {
 
           {/* Session 2 */}
           <Link to="/training/thursday-swim" className="training-card">
-            <h3>Thursday Swim – LSST</h3>
+            <h3>Thursday Swim – Priory Lincoln Academy</h3>
             <h6>Time: 8:00pm - 9:00pm</h6>
             <p>Structured swim training suitable for a range of abilities.</p>
             <span className="tag">Swim</span>

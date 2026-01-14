@@ -7,10 +7,10 @@ function Footer() {
       <div className="footer-content">
         {/* Club info */}
         <div className="footer-section">
-          <h4>Lincoln Triathlon Club</h4>
+          <h4>Lincoln Tri Club</h4>
           <p>
-            A friendly, inclusive triathlon club supporting athletes of all
-            abilities across swim, bike and run.
+            A friendly, inclusive tri club supporting athletes of all abilities
+            across swim, bike and run.
           </p>
         </div>
 
@@ -59,7 +59,7 @@ function Footer() {
 
       {/* Bottom bar */}
       <div className="footer-bottom">
-        <p>© {new Date().getFullYear()} Lincoln Triathlon Club</p>
+        <p>© {new Date().getFullYear()} Lincoln Tri Club</p>
       </div>
     </footer>
   );

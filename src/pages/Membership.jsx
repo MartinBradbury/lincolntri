@@ -37,10 +37,9 @@ function Membership() {
         <h2>Membership Fees & Benefits</h2>
 
         <p>
-          Lincoln Triathlon Club offers a friendly, inclusive environment for
-          athletes of all abilities. Membership provides access to structured
-          training, competitive and social events, and a supportive coaching
-          team.
+          Lincoln Tri Club offers a friendly, inclusive environment for athletes
+          of all abilities. Membership provides access to structured training,
+          competitive and social events, and a supportive coaching team.
         </p>
 
         <div className="membership-pricing">
@@ -104,39 +103,13 @@ function Membership() {
           Junior track sessions are charged at £10 per month via direct debit.
         </p>
 
-        <h2>Swim Session Times (2025)</h2>
-
-        <ul className="session-times">
-          <li>
-            <strong>Tuesday:</strong> 8:00 – 9:00pm (5 lanes, coached) –
-            Yarborough Leisure Centre
-          </li>
-          <li>
-            <strong>Thursday:</strong> 8:00 – 9:00pm (4 lanes, coached) – The
-            Priory Lincoln Academy
-          </li>
-          <li>
-            <strong>Sunday:</strong> Winter training 7:00 – 8:00am (5 lanes,
-            coached) – Yarborough Leisure Centre
-          </li>
-        </ul>
-
-        <h2>Track Session Times (2025)</h2>
-
-        <ul className="session-times">
-          <li>
-            <strong>Friday:</strong> 7:00 – 8:00pm (8-lane athletics track,
-            coached) – Yarborough Leisure Centre
-          </li>
-        </ul>
-
         <h2>How to Join</h2>
 
         <p>
-          To join Lincoln Triathlon Club, please complete the membership enquiry
-          form below. You will be sent a membership form to complete and return.
-          Once received, the Treasurer will issue an invoice and set up payment
-          via direct debit.
+          To join Lincoln Tri Club, please complete the membership enquiry form
+          below. You will be sent a membership form to complete and return. Once
+          received, the Treasurer will issue an invoice and set up payment via
+          direct debit.
         </p>
 
         <h2>Club Policies & Conduct</h2>
@@ -157,11 +130,11 @@ function Membership() {
         {/* Membership Enquiry */}
         <section className="membership-enquiry">
           <div className="membership-image">
-            <img src={Test1} alt="Lincoln Triathlon Club training" />
+            <img src={Test1} alt="Lincoln Tri Club training" />
           </div>
 
           <div className="membership-form">
-            <h3>Membership Enquiry</h3>
+            <h3>Membership and General Enquiry</h3>
 
             <form ref={formRef} onSubmit={sendEmail}>
               <div className="form-group">

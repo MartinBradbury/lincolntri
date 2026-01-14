@@ -9,7 +9,7 @@ function Home() {
       {/* Welcome section */}
       <section className="home-section intro">
         <div className="content">
-          <h1>Welcome to Lincoln Triathlon Club</h1>
+          <h1>Welcome to Lincoln Tri Club</h1>
           <p>
             Lincoln Tri is a fun, friendly and family-orientated triathlon and
             multisport club based in Lincoln.
