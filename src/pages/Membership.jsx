@@ -134,7 +134,7 @@ function Membership() {
           </div>
 
           <div className="membership-form">
-            <h3>Membership and General Enquiry</h3>
+            <h3>Membership Enquiry</h3>
 
             <form ref={formRef} onSubmit={sendEmail}>
               <div className="form-group">
