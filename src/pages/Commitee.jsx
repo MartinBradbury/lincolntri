@@ -104,6 +104,14 @@ function Committee() {
                   volunteer as your Chair, to ensure that the club continues to
                   provide opportunities for entry into Triathlons and other
                   related events as it has for me.
+                  <div>
+                    <a
+                      href="mailto:chair@lincolntri.co.uk?subject=Lincoln%20Tri%20Club%20Sponsorship%20Enquiry"
+                      className="cta-button"
+                    >
+                      Contact Chairperson
+                    </a>
+                  </div>
                 </p>
               </div>
             </div>
@@ -130,6 +138,14 @@ function Committee() {
                   event committees. I hope that this experience will stand me in
                   good stead as I take over the Lincoln Tri Club Secretary role.
                 </p>
+                <div>
+                  <a
+                    href="mailto:secretary@lincolntri.co.uk?subject=Lincoln%20Tri%20Club%20Sponsorship%20Enquiry"
+                    className="cta-button"
+                  >
+                    Contact Secretary
+                  </a>
+                </div>
               </div>
             </div>
 
@@ -161,6 +177,14 @@ function Committee() {
                   hope my work, numeracy & budgeting experience will help me in
                   the Lincoln Tri Club Treasurer role.
                 </p>
+                <div>
+                  <a
+                    href="mailto:treasurer@lincolntri.co.uk?subject=Lincoln%20Tri%20Club%20Sponsorship%20Enquiry"
+                    className="cta-button"
+                  >
+                    Contact Treasurer
+                  </a>
+                </div>
               </div>
             </div>
 
@@ -188,6 +212,14 @@ function Committee() {
                   Tri Club committee and to be able to put my knowledge to use
                   in supporting both the junior and adult sections.
                 </p>
+                <div>
+                  <a
+                    href="mailto:welfare@lincolntri.co.uk?subject=Lincoln%20Tri%20Club%20Sponsorship%20Enquiry"
+                    className="cta-button"
+                  >
+                    Contact Welfare
+                  </a>
+                </div>
               </div>
             </div>
 
@@ -203,6 +235,14 @@ function Committee() {
                   Florrie acts as the main point of contact for social media
                   within the club.
                 </p>
+                <div>
+                  <a
+                    href="mailto:chair@lincolntri.co.uk?subject=Lincoln%20Tri%20Club%20Sponsorship%20Enquiry"
+                    className="cta-button"
+                  >
+                    Contact Social Media
+                  </a>
+                </div>
               </div>
             </div>
 
@@ -229,6 +269,14 @@ function Committee() {
                   the RAF at the interservices cross country/biathlon ski
                   championships, regional cross country and hockey.
                 </p>
+                <div>
+                  <a
+                    href="mailto:membership@lincolntri.co.uk?subject=Lincoln%20Tri%20Club%20Sponsorship%20Enquiry"
+                    className="cta-button"
+                  >
+                    Contact Membership
+                  </a>
+                </div>
               </div>
             </div>
 
@@ -257,15 +305,18 @@ function Committee() {
                   offer more sessions to the membership. Build the number of
                   sessions on offer (venue availability dependent)
                 </p>
+                <div>
+                  <a
+                    href="mailto:coach@lincolntri.co.uk?subject=Lincoln%20Tri%20Club%20Sponsorship%20Enquiry"
+                    className="cta-button"
+                  >
+                    Contact Head Coach
+                  </a>
+                </div>
               </div>
             </div>
           </div>
         </section>
-      </div>
-      <div className="role-footer">
-        <Link to="/membership" className="back-button">
-          Enquire Now
-        </Link>
       </div>
     </section>
   );

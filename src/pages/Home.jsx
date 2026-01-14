@@ -59,22 +59,15 @@ function Home() {
       {/* Sponsorship Section */}
       <section className="home-section sponsorship">
         <div className="content">
-          <h2>Sponsorship Opportunities</h2>
+          <h2>Partner With Us:</h2>
           <p>
-            LincolnTri Club is a community-focused triathlon and multisport
-            athletics club affiliated with British Triathlon and Triathlon
-            England. We support athletes of all ages and abilities, promote
-            health and wellbeing, and play an active role in the local
-            community. We welcome discussions with small and medium-sized
-            businesses seeking to increase their local visibility while
-            supporting grassroots sport. Although we do not currently offer
-            fixed sponsorship packages, we are keen to develop flexible
-            partnership arrangements that deliver mutual value, including brand
-            exposure, community engagement, and positive local impact.
-            Businesses interested in exploring sponsorship opportunities are
-            encouraged to contact us to discuss how a partnership with
-            LincolnTri Club could support both organisational objectives and
-            community wellbeing. For further discussion please contact us.
+            LincolnTri Club works at the heart of the local community,
+            supporting athletes of all abilities while promoting health,
+            wellbeing, and active lifestyles. We welcome conversations with
+            small and medium-sized businesses interested in flexible sponsorship
+            opportunities that offer local visibility and meaningful community
+            impact. Get in touch to explore how a partnership with LincolnTri
+            Club can deliver mutual benefit.
           </p>
           <a
             href="mailto:chair@lincolntri.co.uk?subject=Lincoln%20Tri%20Club%20Sponsorship%20Enquiry"

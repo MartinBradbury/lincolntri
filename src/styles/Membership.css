@@ -256,3 +256,27 @@
     transform: none;
   }
 }
+
+/* ================================
+   Sponsorship section
+================================ */
+.home-section.sponsorship {
+  background-color: #f8f8f8;
+  text-align: center;
+}
+
+.home-section.sponsorship .content {
+  max-width: 900px;
+}
+
+.home-section.sponsorship h2 {
+  color: #ff0000;
+  margin-bottom: 1.25rem;
+}
+
+.home-section.sponsorship p {
+  font-size: 1.05rem;
+  line-height: 1.75;
+  margin-bottom: 1.75rem;
+  color: #333;
+}
