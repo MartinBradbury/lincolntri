@@ -237,7 +237,7 @@ function Committee() {
                 </p>
                 <div>
                   <a
-                    href="mailto:chair@lincolntri.co.uk?subject=Lincoln%20Tri%20Club%20Sponsorship%20Enquiry"
+                    href="mailto:info@lincolntri.co.uk?subject=Lincoln%20Tri%20Club%20Sponsorship%20Enquiry"
                     className="cta-button"
                   >
                     Contact Social Media
