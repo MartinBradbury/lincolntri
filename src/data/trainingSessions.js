@@ -14,16 +14,15 @@ export const trainingSessions = {
   },
 
   "thursday-swim": {
-    title: "Thursday Swim – Priory LSST Pool",
+    title: "Thursday Swim – Priory Lincoln Academy",
     time: "8:00pm – 9:00pm",
     type: "Swim",
     audience: "Adults and Juniors",
     description:
       "A structured coached swim session designed to support triathletes in improving technique, stamina, and swim confidence. The session incorporates drill-based work and endurance sets, with coaching feedback to help swimmers develop a more efficient and sustainable stroke for training and competition.",
     location: {
-      name: "The Priory LSST School",
-      address:
-        "St Katherine's House, Cross O'Cliff Hill, Lincoln, Lincolnshire, England LN5 8PW",
+      name: "The Priory Lincoln Academy",
+      address: "Skellingthorpe Road, Lincoln, Lincolnshire, LN6 0EP",
       mapQuery: "The Priory LSST Pool",
     },
   },
