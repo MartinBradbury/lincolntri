@@ -1,38 +1,37 @@
 import Carousel from "react-bootstrap/Carousel";
 import "../styles/Carousel.css";
-import Test1 from "../assets/test1.jpg";
-import Test2 from "../assets/test2.jpg";
-import Test3 from "../assets/test3.jpg";
+
+const slides = [
+  {
+    className: "slide-1",
+    title: "Train Smarter",
+    text: "Structured plans for swim, bike, and run.",
+  },
+  {
+    className: "slide-2",
+    title: "Race Stronger",
+    text: "Build endurance, speed, and confidence for race day.",
+  },
+  {
+    className: "slide-3",
+    title: "Join the Community",
+    text: "Supportive coaching and sessions for all abilities.",
+  },
+];
 
 function ImageCarousel() {
   return (
     <Carousel fade>
-      <Carousel.Item interval={3000}>
-        <div className="carousel-slide slide-1">
-          <Carousel.Caption>
-            <h3>Train Smarter</h3>
-            <p>Structured plans for swim, bike and run.</p>
-          </Carousel.Caption>
-        </div>
-      </Carousel.Item>
-
-      <Carousel.Item interval={3000}>
-        <div className="carousel-slide slide-2">
-          <Carousel.Caption>
-            <h3>Train Smarter</h3>
-            <p>Structured plans for swim, bike and run.</p>
-          </Carousel.Caption>
-        </div>
-      </Carousel.Item>
-
-      <Carousel.Item interval={3000}>
-        <div className="carousel-slide slide-3">
-          <Carousel.Caption>
-            <h3>Train Smarter</h3>
-            <p>Structured plans for swim, bike and run.</p>
-          </Carousel.Caption>
-        </div>
-      </Carousel.Item>
+      {slides.map((slide, index) => (
+        <Carousel.Item key={index} interval={3000}>
+          <div className={`carousel-slide ${slide.className}`}>
+            <Carousel.Caption className="fade-caption">
+              <h3>{slide.title}</h3>
+              <p>{slide.text}</p>
+            </Carousel.Caption>
+          </div>
+        </Carousel.Item>
+      ))}
     </Carousel>
   );
 }
