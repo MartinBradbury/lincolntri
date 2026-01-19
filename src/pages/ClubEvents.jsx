@@ -86,7 +86,9 @@ function ClubEvents() {
 
           {/* Chairperson's Award */}
           <div className="feature-grid award-block">
-            <div className="award-image chair-award">{/* image via CSS */}</div>
+            <div className="award-image1 chair-award">
+              {/* image via CSS */}
+            </div>
             <div>
               <h3>Chairpersons Award</h3>
               <p>
@@ -99,7 +101,7 @@ function ClubEvents() {
 
           {/* Impsport Performance Award */}
           <div className="feature-grid award-block reverse">
-            <div className="award-image performance-award">
+            <div className="award-image2 performance-award">
               {/* image via CSS */}
             </div>
             <div>
@@ -114,7 +116,7 @@ function ClubEvents() {
 
           {/* Special Award */}
           <div className="feature-grid award-block">
-            <div className="award-image special-award">
+            <div className="award-image3 special-award">
               {/* image via CSS */}
             </div>
             <div>
@@ -128,7 +130,7 @@ function ClubEvents() {
 
           {/* Club Champions */}
           <div className="feature-grid award-block reverse">
-            <div className="award-image champions-award">
+            <div className="award-image4 champions-award">
               {/* image via CSS */}
             </div>
             <div>

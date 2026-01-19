@@ -3,8 +3,8 @@ import emailjs from "emailjs-com";
 import "../styles/Membership.css";
 import Test1 from "../assets/test1.jpg";
 
-/* ✅ REQUIRED for emailjs-com */
-emailjs.init("cov_dCTSvAbqhgE3i");
+/* ✅ REQUIRED for emailjs-com Public Key*/
+emailjs.init("tnQh_BvG9hWp1qXfS");
 
 function Membership() {
   const formRef = useRef();
@@ -15,8 +15,8 @@ function Membership() {
 
     emailjs
       .sendForm(
-        "service_lincolntri", // SERVICE ID
-        "template_l4wg2fh", // TEMPLATE ID
+        "service_lincolntri2026", // SERVICE ID
+        "contact_us", // TEMPLATE ID
         formRef.current // FORM ELEMENT
       )
       .then(

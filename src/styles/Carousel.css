@@ -1,5 +1,5 @@
 .carousel-slide {
-  height: 400px;
+  height: 600px;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center 30%;
@@ -8,18 +8,18 @@
 
 /* Individual slide control */
 .slide-1 {
-  background-image: url("../assets/test1.jpg");
-  background-position: center 25%;
+  background-image: url("../assets/group.jpeg");
+  background-position: center 30%;
 }
 
 .slide-2 {
-  background-image: url("../assets/test2.jpg");
-  background-position: center 40%;
+  background-image: url("../assets/wide1.jpeg");
+  background-position: center 35%;
 }
 
 .slide-3 {
-  background-image: url("../assets/test3.jpg");
-  background-position: center center;
+  background-image: url("../assets/wide2.jpg");
+  background-position: center 30%;
 }
 
 @media (max-width: 768px) {

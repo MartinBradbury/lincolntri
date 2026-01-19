@@ -57,9 +57,9 @@
 
 .feature-image {
   height: 350px;
-  background-image: url("../assets/test2.jpg");
+  background-image: url("../assets/everyone.jpg");
   background-size: cover;
-  background-position: center 30%;
+  background-position: center 15%;
   border-radius: 8px;
 }
 

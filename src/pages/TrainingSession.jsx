@@ -23,7 +23,11 @@ function TrainingSession() {
 
         {/* Image / Carousel placeholder */}
         <div className="session-media">
-          <p>Image or carousel placeholder</p>
+          <img
+            src={session.image}
+            alt={`${session.title} training session`}
+            loading="lazy"
+          />
         </div>
 
         <p className="session-description">{session.description}</p>

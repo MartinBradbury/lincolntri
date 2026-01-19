@@ -5,6 +5,7 @@ import gaz2 from "../assets/gaz2.jpg";
 import steve from "../assets/steve.jpg";
 import jayne from "../assets/jayne.jpg";
 import laura from "../assets/laura.jpg";
+import placeholder from "../assets/lincolntri.jpg";
 
 function Committee() {
   return (
@@ -106,7 +107,7 @@ function Committee() {
                   related events as it has for me.
                   <div>
                     <a
-                      href="mailto:chair@lincolntri.co.uk?subject=Lincoln%20Tri%20Club%20Sponsorship%20Enquiry"
+                      href="mailto:chair@lincolntri.co.uk"
                       className="cta-button"
                     >
                       Contact Chairperson
@@ -119,7 +120,7 @@ function Committee() {
             {/* Secretary */}
             <div className="committee-card">
               <div className="committee-image">
-                <img src={Test1} alt="Martin Bradbury" />
+                <img src={placeholder} alt="Martin Bradbury" />
               </div>
               <div className="committee-content">
                 <h3>Secretary</h3>
@@ -140,7 +141,7 @@ function Committee() {
                 </p>
                 <div>
                   <a
-                    href="mailto:secretary@lincolntri.co.uk?subject=Lincoln%20Tri%20Club%20Sponsorship%20Enquiry"
+                    href="mailto:secretary@lincolntri.co.uk"
                     className="cta-button"
                   >
                     Contact Secretary
@@ -152,7 +153,7 @@ function Committee() {
             {/* Treasurer */}
             <div className="committee-card">
               <div className="committee-image">
-                <img src={Test1} alt="Pete Cox" />
+                <img src={placeholder} alt="Pete Cox" />
               </div>
               <div className="committee-content">
                 <h3>Treasurer</h3>
@@ -179,7 +180,7 @@ function Committee() {
                 </p>
                 <div>
                   <a
-                    href="mailto:treasurer@lincolntri.co.uk?subject=Lincoln%20Tri%20Club%20Sponsorship%20Enquiry"
+                    href="mailto:treasurer@lincolntri.co.uk"
                     className="cta-button"
                   >
                     Contact Treasurer
@@ -214,7 +215,7 @@ function Committee() {
                 </p>
                 <div>
                   <a
-                    href="mailto:welfare@lincolntri.co.uk?subject=Lincoln%20Tri%20Club%20Sponsorship%20Enquiry"
+                    href="mailto:welfare@lincolntri.co.uk"
                     className="cta-button"
                   >
                     Contact Welfare
@@ -226,7 +227,7 @@ function Committee() {
             {/* Social Media */}
             <div className="committee-card">
               <div className="committee-image">
-                <img src={Test1} alt="Florrie Machin" />
+                <img src={placeholder} alt="Florrie Machin" />
               </div>
               <div className="committee-content">
                 <h3>Social Media</h3>
@@ -236,10 +237,7 @@ function Committee() {
                   within the club.
                 </p>
                 <div>
-                  <a
-                    href="mailto:info@lincolntri.co.uk?subject=Lincoln%20Tri%20Club%20Sponsorship%20Enquiry"
-                    className="cta-button"
-                  >
+                  <a href="mailto:info@lincolntri.co.uk" className="cta-button">
                     Contact Social Media
                   </a>
                 </div>
@@ -271,7 +269,7 @@ function Committee() {
                 </p>
                 <div>
                   <a
-                    href="mailto:membership@lincolntri.co.uk?subject=Lincoln%20Tri%20Club%20Sponsorship%20Enquiry"
+                    href="mailto:membership@lincolntri.co.uk"
                     className="cta-button"
                   >
                     Contact Membership
@@ -307,7 +305,7 @@ function Committee() {
                 </p>
                 <div>
                   <a
-                    href="mailto:coach@lincolntri.co.uk?subject=Lincoln%20Tri%20Club%20Sponsorship%20Enquiry"
+                    href="mailto:coach@lincolntri.co.uk"
                     className="cta-button"
                   >
                     Contact Head Coach

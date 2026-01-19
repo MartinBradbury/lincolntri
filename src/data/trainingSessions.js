@@ -3,6 +3,7 @@ export const trainingSessions = {
     title: "Tuesday Swim – Yarborough Leisure Centre",
     time: "8:00pm – 9:00pm",
     type: "Swim",
+    image: "/src/assets/swimpool.jpg",
     audience: "Adults and Juniors",
     description:
       "This coached swim session focuses on developing efficient technique, endurance, and confidence in the water for triathletes of all abilities. Sessions include structured drills and sets aimed at improving stroke mechanics, pacing, and overall swim efficiency, helping athletes become stronger and more relaxed swimmers on race day.",
@@ -17,6 +18,7 @@ export const trainingSessions = {
     title: "Thursday Swim – Priory Lincoln Academy",
     time: "8:00pm – 9:00pm",
     type: "Swim",
+    image: "/src/assets/swimthurs.jpg",
     audience: "Adults and Juniors",
     description:
       "A structured coached swim session designed to support triathletes in improving technique, stamina, and swim confidence. The session incorporates drill-based work and endurance sets, with coaching feedback to help swimmers develop a more efficient and sustainable stroke for training and competition.",
@@ -31,6 +33,7 @@ export const trainingSessions = {
     title: "Friday Track – Yarborough Leisure Centre",
     time: "7:00pm – 8:00pm",
     type: "Track Run",
+    image: "/src/assets/track.jpg",
     audience: "Adults and Juniors",
     description:
       "This coached track session focuses on developing running speed, technique, and endurance specifically for triathlon. Sessions include structured intervals, pacing work, and technique drills, helping athletes improve running efficiency and resilience while reducing injury risk and supporting strong run performances off the bike.",

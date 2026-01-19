@@ -143,12 +143,36 @@
   direction: ltr;
 }
 
-.award-image {
-  height: 260px;
+.award-image1 {
+  height: 350px;
   border-radius: 8px;
-  background-image: url("../assets/test1.jpg");
+  background-image: url("../assets/chairaward.jpg");
   background-size: cover;
-  background-position: center;
+  background-position: center 25%;
+}
+
+.award-image2 {
+  height: 350px;
+  border-radius: 8px;
+  background-image: url("../assets/performanceaward.jpg");
+  background-size: cover;
+  background-position: center 30%;
+}
+
+.award-image3 {
+  height: 350px;
+  border-radius: 8px;
+  background-image: url("../assets/specialaward.jpg");
+  background-size: cover;
+  background-position: center 30%;
+}
+
+.award-image4 {
+  height: 350px;
+  border-radius: 8px;
+  background-image: url("../assets/clubaward.jpg");
+  background-size: cover;
+  background-position: center 30%;
 }
 
 /* Responsive */
