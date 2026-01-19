@@ -5,7 +5,7 @@ const slides = [
   {
     className: "slide-1",
     title: "Train Smarter",
-    text: "Structured plans for swim, bike, and run.",
+    text: "Structured sessions for swim, bike, and run.",
   },
   {
     className: "slide-2",
